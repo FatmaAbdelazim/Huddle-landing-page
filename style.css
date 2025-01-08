@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Molle&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Molle&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+    font-size: 16px;
+}
+*{
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    height: 100vh;
+}
+nav{
+   height: 0.3rem;
+   display: flex;
+   padding-top: 4rem;
+   padding-left: 4rem;
+ 
+}
+nav img{
+    height: auto;
+    width: 12%;
+}
+main{
+    width: 100%;
+    height: 85%;
+}
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.divImg{
+   /*  background-image: url(images/illustration-mockups.svg); 
+    background-size: cover;
+    */
+    width: 50%;
+    height: 30rem;
+    margin-top: 2rem;
+}
+.divImg img{
+    width: 100%;
+    height: auto;
+}
+.divText{
+    margin-top: 2rem;
+    width: 40%;
+    height: 30rem;
+    padding: 2rem;
+}
+a {
+    font-size: 2rem;
+    color: white;
+    margin: 0.5rem;
+}
+h1,h2{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 70%;
+    font-size: 1.7rem;
+}
+p{
+  font-family: "Open Sans", serif;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.btn{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: white;
+    border-radius: 1.5rem;
+    color: hsl(257, 40%, 49%);
+}
+footer{
+    height: 1rem;
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content:end ;
+}
+footer i{
+    font-size: 1rem;   
+}
+.icon{
+    border: solid white 1px;
+    display: inline;
+    border-radius: 40px;
+    width: 2rem;
+    height: 2rem;
+    padding: 5px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+@media screen and (max-width:700px){
+    html{
+        font-size: 10px;
+    }
+    body{
+        background-image: url(images/bg-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav{
+       height: 1rem;
+       display: flex;
+       padding-top: 4rem;
+       padding-left: 4rem;
+       padding-bottom: 4rem;
+       width: 96%;
+     
+    }
+    nav img{
+        height: auto;
+        width: 40%;
+    }
+    main{
+        width: 100%;
+        height: 100vh;
+    }
+    section{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .divImg{
+        width: 90%;
+        height: 20rem;
+    }
+    .divImg img{
+        width: 100%;
+        height: auto;
+    }
+    .divText{
+        width: 96%;
+        height: 25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1,h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+    p{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    .btn{
+        width: 60%;
+        height: 30px;
+    }
+
+    footer{
+        height: 3rem;
+        width: 96%;
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
