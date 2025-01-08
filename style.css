@@ -113,7 +113,10 @@ footer i{
     background-color: hsl(300, 69%, 71%);
     color: white;
 }
-
+.icon:hover{
+    border: solid hsl(300, 69%, 71%) 1px;
+    color: hsl(300, 69%, 71%);
+}
 @media screen and (max-width:700px){
     html{
         font-size: 10px;
